@@ -1,0 +1,51 @@
+{
+  "name": "kodo-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "jest"
+  },
+  "type": "module",
+  "author": "Hitesh Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "joi": "^17.6.0"
+  },
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@types/jest": "^27.4.1",
+    "babel": "^6.23.0",
+    "jest": "^27.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  },
+  "jest": {
+    "verbose": true,
+    "testRegex": ".spec.js"
+  },
+  "engines": {
+    "node": "17.5.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "node": "17.5.0"
+          }
+        }
+      ]
+    ]
+  }
+}
